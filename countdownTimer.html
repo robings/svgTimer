@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="countdownTimer.css" />
+    <script defer src="countdownTimer.js"></script>
+    <title>Countdown Timer</title>
+</head>
+
+<body>
+
+    <nav>
+        <h1>Countdown Timer</h1>
+    </nav>
+
+    <main>
+
+        <div id='timerContainer'>
+            <svg id="timer" viewBox='0 0 400 400'>
+                <g id="timeRing">
+                    <circle r='152' cx='200' cy='200' style='fill: #1C2527' />
+                    <circle r='150' cx='200' cy='200' style='fill: #1C2527; stroke-width: 1; stroke: #999999;' />
+                    <circle r='125' cx='200' cy='200' style='fill: #1C2527; stroke-width: 1; stroke: #999999;' />
+                </g>
+
+                <g id="secondsRing">
+                    <circle r='123' cx='200' cy='200' style='fill: #1C2527; stroke-width: 1; stroke: #FF0000;' />
+                    <circle r='111' cx='200' cy='200' style='fill: #1C2527; stroke-width: 1; stroke: #FF0000;' />
+                    <line x1='200' y1='79' x2='200' y2='95' style='stroke-width: 1; stroke: #FF0000;' />
+                </g>
+
+<!--                <circle r='109' cx='200' cy='200' style='fill: #FFFFFF;' />-->
+
+                <g id="timePointer">
+                    <line id='minutes' x1='198' y1='105' x2='198' y2='84' style='stroke-width: 1; stroke: #CA6702;' />
+                    <line id='minutes' x1='202' y1='110' x2='202' y2='84' style='stroke-width: 1; stroke: #CA6702;' />
+                    <line id='minutes' x1='200' y1='80' x2='196' y2='88' style='stroke-width: 1; stroke: #CA6702;' />
+                    <line id='minutes' x1='200' y1='80' x2='204' y2='88' style='stroke-width: 1; stroke: #CA6702;' />
+                </g>
+
+                <g id='turningClockFace'>
+                    <text x='196' y='67' style='fill: #EBBD3F; '>0</text>
+                    <g style='transform: rotate(30deg); transform-origin: center;'>
+                        <text x='196' y='67' style='fill: #EBBD3F;'>5</text>
+                    </g>
+                    <g style='transform: rotate(60deg); transform-origin: center;'>
+                        <text x='192' y='67' style='fill: #EBBD3F;'>10</text>
+                    </g>
+                    <g style='transform: rotate(90deg); transform-origin: center;'>
+                        <text x='192' y='67' style='fill: #EBBD3F;'>15</text>
+                    </g>
+                    <g style='transform: rotate(120deg); transform-origin: center;'>
+                        <text x='192' y='67' style='fill: #EBBD3F;'>20</text>
+                    </g>
+                    <g style='transform: rotate(150deg); transform-origin: center;'>
+                        <text x='192' y='67' style='fill: #EBBD3F;'>25</text>
+                    </g>
+                    <g style='transform: rotate(180deg); transform-origin: center;'>
+                        <text x='192' y='67' style='fill: #EBBD3F;'>30</text>
+                    </g>
+                    <g style='transform: rotate(210deg); transform-origin: center;'>
+                        <text x='192' y='67' style='fill: #EBBD3F;'>35</text>
+                    </g>
+                    <g style='transform: rotate(240deg); transform-origin: center;'>
+                        <text x='192' y='67' style='fill: #EBBD3F;'>40</text>
+                    </g>
+                    <g style='transform: rotate(270deg); transform-origin: center;'>
+                        <text x='192' y='67' style='fill: #EBBD3F;'>45</text>
+                    </g>
+                    <g style='transform: rotate(300deg); transform-origin: center;'>
+                        <text x='192' y='67' style='fill: #EBBD3F;'>50</text>
+                    </g>
+                    <g style='transform: rotate(330deg); transform-origin: center;'>
+                        <text x='192' y='67' style='fill: #EBBD3F;'>55</text>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
