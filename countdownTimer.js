@@ -5,14 +5,14 @@ for (let i=0; i<(12*5); i++) {
     newLine.setAttribute('y1', '70')
     newLine.setAttribute('x2', '200')
     newLine.setAttribute('y2', '74')
-    newLine.style.stroke='#999999'
+    newLine.style.stroke='#444444'
     newLine.style.strokeWidth='1'
     newLine.style.transform=`rotate(${i*6}deg)`
     newLine.style.transformOrigin='center'
     svg.appendChild(newLine)
 }
 
-let timeToTime = 1
+let timeToTime = 5
 
 let m = timeToTime
 let s = timeToTime * 60

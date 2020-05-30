@@ -1,7 +1,23 @@
+@font-face {
+    font-family: IBMPlexMono;
+    src: url(./IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: IBMPlexSans;
+    src: url(./IBMPlexSans-Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
+    font-family: 'IBMPlexMono', 'sans-serif';
+}
+
+body {
+    background-color: #1C2527;
+    color: #EBBD3F;
 }
 
 #timer {
-    width: 300px;
+    width: 400px;
 }
